@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yogeshh-11/simple-ci-app.git'
+                git branch: 'main', url: 'https://github.com/yogeshh-11/simple-ci-app.git'
             }
         }
         stage('Build Docker Image') {
